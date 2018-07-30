@@ -49,15 +49,16 @@ body {
 
 html {
   font-size: 16px;
-  line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 body {
+  font-family: "Times", serif;
+  font-weight: lighter;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -75,13 +76,18 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", serif;
+  font-weight: normal;
+  text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
 h1 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 h2 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 h3 {
   font-size: 1.25rem;
@@ -92,6 +98,7 @@ h4, h5, h6 {
 
 /* Body text */
 p {
+    margin-bottom: 1em;
 }
 
 strong {

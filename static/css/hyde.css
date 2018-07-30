@@ -40,7 +40,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -55,7 +55,8 @@ html {
 .sidebar {
   text-align: center;
   padding: 4rem 4rem;
-  background-color: #ffffff;
+  background-color: rgba(255, 0, 0, .10);
+  transform: rotate(20deg);
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -109,6 +110,8 @@ a.sidebar-nav-item:focus {
 .content {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 48em) {
@@ -140,15 +143,21 @@ a.sidebar-nav-item:focus {
   }
   .layout-reverse .content {
     margin-left: 2rem;
-    margin-right: 20rem;
+    margin-right: 24rem;
   }
 }
 
 @media (min-width: 64em) {
   .layout-reverse .content {
-    margin-left: 4rem;
-    margin-right: 22rem;
+    margin-left: 8rem;
+    margin-right: 24rem;
   }
+}
+
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.66rem;
 }
 
 
