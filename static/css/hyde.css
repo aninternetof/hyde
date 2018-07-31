@@ -55,9 +55,24 @@ html {
 .sidebar {
   text-align: center;
   padding: 4rem 4rem;
-  background-color: rgba(255, 0, 0, .10);
+  background-color: rgba(255, 0, 0, .50);
   transform: rotate(20deg);
 }
+
+.sidebar-corrected {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .sidebar-corrected {
+    background-color: #ffffff;
+    display: inline;
+    position: absolute;
+    transform: rotate(-20deg);
+    margin-top: 12rem;
+  }
+}
+
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;

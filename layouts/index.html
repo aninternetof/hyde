@@ -1,3 +1,5 @@
 {{ define "main" -}}
-{{ with .Site.GetPage "/pages/about" }}{{ .Content }}{{ end }}
+<div class="box">
+    {{ with .Site.GetPage "/pages/about" }}{{ .Content }}{{ end }}
+</div>
 {{- end }}
