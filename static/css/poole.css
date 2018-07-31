@@ -77,17 +77,15 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  display: table;
   font-family: "Helvetica", serif;
   font-weight: normal;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  background-color: #ffff00;
 }
 h2 {
   font-size: 1.5rem;
@@ -106,9 +104,9 @@ p {
 }
 
 strong {
-  color: #303030;
+  background-color: #fff2ac;
+  background-image: linear-gradient(to right, #ffff33 0%, #ffff8c 100%);
 }
-
 
 /* Lists */
 ul, ol, dl {
