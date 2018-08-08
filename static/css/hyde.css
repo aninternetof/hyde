@@ -55,7 +55,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 4rem 4rem;
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.8);
   border-style: dashed;
   border-width: 2px;
   border-color: #ff0000;
@@ -266,4 +266,5 @@ em {
 
 li {
   list-style: circle;
+  list-style-position: inside;
 }

@@ -1,5 +1,10 @@
 {{ define "main" -}}
-<div class="box">
-    {{ with .Site.GetPage "/pages/about" }}{{ .Content }}{{ end }}
-</div>
+{{ $fictionSection := where .Site.Pages "Section" "number" }}
+{{ range first 1 $fictionSection }}
+    {{ partial "single-content.html" . }}
+    {{ if .Site.DisqusShortname -}}
+    <h2>Comments</h2>
+    {{ partial "disqus_hack.html" (dict "pageUrl" .URL "pageIdentifier" .UniqueID "context" .) }}
+{{- end }}
+{{ end }}
 {{- end }}

@@ -57,6 +57,7 @@ html {
 }
 
 body {
+  line-height: 1.5;
   font-family: "Times", serif;
   font-weight: lighter;
   background-color: #ffffff;
@@ -102,16 +103,17 @@ h4, h5, h6 {
 
 /* Body text */
 p {
-    margin-bottom: 1em;
+    margin-bottom: 1.0rem;
 }
 
 strong {
-  background-color: #fff2ac;
-  background-image: linear-gradient(to right, #ffff33 0%, #ffff8c 100%);
+  background-color: rgba(255, 255, 0, 0.4);
+  background-image: linear-gradient(to right, rgba(255, 255, 40, 0.4), rgba(255, 255, 100, 0.4));
 }
 
 /* Lists */
 ul, ol, dl {
+  margin-bottom: 1em;
 }
 
 dt {
@@ -290,16 +292,27 @@ tbody tr:nth-child(odd) th {
 }
 
 .box > *  {
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 6rem;
+  border-style: solid;
+  border-width: 1px;
 }
 .page-title,
 .post-title {
+}
+
+.page-title h1 {
+  margin-bottom: 0;
 }
 
 /* Meta data line below post title */

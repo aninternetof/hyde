@@ -1,9 +1,13 @@
 {{ partial "head.html" . }}
   <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
   {{ partial "sidebar.html" . }}
-    <div class="content container">
-    {{ block "main" . -}}{{- end }}
-    </div>
+  <div class="page-title container">
+    <h1><strong>{{ .Site.Title}}</strong></h1>
+    <span class="lead">{{ .Site.Params.Description}}</span>
+  </div>
+  <div class="content container">
+  {{ block "main" . -}}{{- end }}
+  </div>
 
     {{ template "_internal/google_analytics_async.html" . }}
   </body>
