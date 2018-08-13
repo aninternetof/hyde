@@ -1,5 +1,5 @@
 {{ define "main" -}}
-{{ $fictionSection := where .Site.Pages "Section" "number" }}
+{{ $fictionSection := where .Site.Pages "Section" "posts" }}
 {{ range first 1 $fictionSection }}
     {{ partial "single-content.html" . }}
     {{ if .Site.DisqusShortname -}}

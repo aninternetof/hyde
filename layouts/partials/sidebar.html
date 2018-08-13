@@ -11,7 +11,7 @@
 
     <div class="sidebar-corrected">
       {{ if .IsHome -}}
-          {{ $fictionSection := ($.Site.GetPage "Section" "number").Pages }}
+          {{ $fictionSection := ($.Site.GetPage "Section" "posts").Pages }}
           {{ range first 1 (after 1 $fictionSection) }}
           <a href="{{ .Permalink }}">previous</a>
           {{ end }}
